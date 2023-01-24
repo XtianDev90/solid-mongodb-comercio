@@ -1,0 +1,71 @@
+[
+  {
+    "transaction": {
+      "id": 1,
+      "startDate": "22/01/2022 13:44:25",
+      "type": 1,
+      "typeName": "Sales transaction",
+      "header": {
+        "store": {
+          "storeCode": 1,
+          "storeName": "Test Store"
+        }
+      },
+      "body": {
+        "customer": {
+          "IdentificationNumber": 11111111,
+          "verificationDigit": "1",
+          "firstName": "Elias",
+          "lastName": "Figueroa"
+        },
+        "items": [
+          {
+            "item": {
+              "code": 1,
+              "name": "Vango Tent",
+              "description": "Vango Tent Tempest Pro 200",
+              "quantity": 1,
+              "price": 320000.00,
+              "discountAmount": 20000.00,
+              "discountCode": 1
+            }
+          }
+        ],
+        "discounts": [
+          {
+            "discount": {
+              "code": 1,
+              "name": "Mountain discount.",
+              "description": "mountain discount of 6.25% applied to the purchase of a Vango brand tent.",
+              "amount": 20000.00
+            }
+          }
+        ],
+        "totals": {
+          "total": 300000.00,
+          "subTotal": 320000.00,
+          "totalDiscounts": 20000.00,
+          "totalPayments": 300000
+        },
+        "payments": [
+          {
+            "payment": {
+              "code": 3,
+              "name": "Crèdito",
+              "amount": 300000.00
+            }
+          }
+        ]
+      },
+      "foot": {
+        "barcode": "ABC123"
+      },
+      "additional": {
+        "changeTicket": {
+          "code": "CT-ABC123",
+          "idTransaction": 1
+        }
+      }
+    }
+  }
+]
