@@ -1,6 +1,8 @@
 package cl.christianmondaca.commerce.dto.response;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 @ToString
 @Getter

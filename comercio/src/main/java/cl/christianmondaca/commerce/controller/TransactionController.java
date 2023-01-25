@@ -3,8 +3,6 @@ package cl.christianmondaca.commerce.controller;
 import cl.christianmondaca.commerce.dto.principal.TransactionDtoRequest;
 import cl.christianmondaca.commerce.dto.response.TransactionDtoResponse;
 import cl.christianmondaca.commerce.services.TransactionServices;
-import cl.christianmondaca.commerce.services.interfaces.ITransactionServices;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,7 +16,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class TransactionController {
     @Autowired
-    private ITransactionServices transactionServices;
+    private TransactionServices transactionServices;
 
     @GetMapping("/transactions/transaction/{id}")
     public ResponseEntity<TransactionDtoResponse> getTransactionById(@PathVariable Long id){

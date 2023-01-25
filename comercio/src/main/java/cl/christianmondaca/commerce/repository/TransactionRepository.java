@@ -1,15 +1,13 @@
 package cl.christianmondaca.commerce.repository;
 
 import cl.christianmondaca.commerce.entity.TransactionEntity;
-import cl.christianmondaca.commerce.factory.IPersistenceFactoryCommerce;
 import cl.christianmondaca.commerce.factory.PersistenceMongoDBFactory;
-import cl.christianmondaca.commerce.persistence.IPersistenceCommerce;
+import cl.christianmondaca.commerce.factory.interfaces.IPersistenceFactoryCommerce;
+import cl.christianmondaca.commerce.persistence.interfaces.IPersistenceCommerce;
 import cl.christianmondaca.commerce.repository.interfaces.ITransactionRepository;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 

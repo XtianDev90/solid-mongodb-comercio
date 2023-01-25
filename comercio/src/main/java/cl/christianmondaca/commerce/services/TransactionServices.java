@@ -4,7 +4,6 @@ import cl.christianmondaca.commerce.dto.principal.TransactionDtoRequest;
 import cl.christianmondaca.commerce.dto.response.TransactionDtoResponse;
 import cl.christianmondaca.commerce.entity.TransactionEntity;
 import cl.christianmondaca.commerce.repository.TransactionRepository;
-import cl.christianmondaca.commerce.repository.interfaces.ITransactionRepository;
 import cl.christianmondaca.commerce.services.interfaces.ITransactionServices;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

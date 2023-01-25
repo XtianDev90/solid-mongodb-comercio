@@ -1,7 +1,7 @@
 package cl.christianmondaca.commerce;
 
-import cl.christianmondaca.commerce.factory.IPersistenceFactoryCommerce;
 import cl.christianmondaca.commerce.factory.PersistenceMongoDBFactory;
+import cl.christianmondaca.commerce.factory.interfaces.IPersistenceFactoryCommerce;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

@@ -1,6 +1,8 @@
 package cl.christianmondaca.commerce.entity;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 import java.io.Serializable;
 
