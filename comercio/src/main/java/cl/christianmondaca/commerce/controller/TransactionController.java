@@ -1,7 +1,6 @@
 package cl.christianmondaca.commerce.controller;
 
 import cl.christianmondaca.commerce.dto.principal.TransactionDtoRequest;
-import cl.christianmondaca.commerce.dto.response.TransactionDtoResponse;
 import cl.christianmondaca.commerce.services.TransactionServices;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,15 +18,15 @@ public class TransactionController {
     private TransactionServices transactionServices;
 
     @GetMapping("/transactions/transaction/{id}")
-    public ResponseEntity<TransactionDtoResponse> getTransactionById(@PathVariable Long id){
-        TransactionDtoResponse response = transactionServices.get(id);
-        return new ResponseEntity<TransactionDtoResponse>(response,null, HttpStatus.OK);
+    public ResponseEntity<TransactionDtoRequest> getTransactionById(@PathVariable Long id){
+        TransactionDtoRequest response = transactionServices.get(id);
+        return new ResponseEntity<>(response, null, HttpStatus.OK);
     }
 
     @GetMapping("/transactions")
-    public ResponseEntity<List<TransactionDtoResponse>> getAllTransactions(){
-        List<TransactionDtoResponse> response = transactionServices.getAll();
-        return new ResponseEntity<List<TransactionDtoResponse>>(response,null, HttpStatus.OK);
+    public ResponseEntity<List<TransactionDtoRequest>> getAllTransactionsSort(){
+        List<TransactionDtoRequest> response = transactionServices.getAllSort();
+        return new ResponseEntity<>(response, null, HttpStatus.OK);
     }
 
     @PostMapping("/transactions/transaction")

@@ -7,5 +7,5 @@ public interface IPersistenceCommerce<T> {
     boolean save(T t);
     boolean saveAll(List<T> ts);
     T get(Long id);
-    List<T> getAll();
+    List<T> getAllSort();
 }

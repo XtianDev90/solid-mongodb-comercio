@@ -8,5 +8,5 @@ public interface ITransactionRepository {
     boolean save(TransactionEntity transactionEntity);
     boolean saveAll(List<TransactionEntity> transactionEntities);
     TransactionEntity get(Long id);
-    List<TransactionEntity> getAll();
+    List<TransactionEntity> getAllSort();
 }

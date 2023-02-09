@@ -1,2 +1,0 @@
-cl/christianmondaca/commerce/ComercioApplicationTests.java
- cl.christianmondaca.commerce.ComercioApplicationTests

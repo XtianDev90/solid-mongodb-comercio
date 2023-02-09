@@ -1,13 +1,11 @@
 package cl.christianmondaca.commerce.entity;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;
 
-@ToString
-@Getter
-@Setter
+@Document(collation = "addiotionals")
+@Data
 public class AdditionalEntity implements Serializable {
 }

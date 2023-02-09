@@ -44,9 +44,9 @@ public class TransactionRepository implements ITransactionRepository {
     }
 
     @Override
-    public List<TransactionEntity> getAll() {
+    public List<TransactionEntity> getAllSort() {
         /*Obtener en Repositorio: MongoDb, Redis , SQL , etc.*/
-        iPersistenceCommerce.getAll();
+        iPersistenceCommerce.getAllSort();
         return new ArrayList<TransactionEntity>();
     }
 }
