@@ -34,7 +34,7 @@ public class TransactionServices implements ITransactionServices {
     }
 
     @Override
-    public boolean saveAll(List<TransactionDtoRequest> transactionDtos) {
+    public boolean saveAll(List<TransactionDtoRequest> transactionDtoRequestDtos) {
         List<TransactionEntity> transactionEntities = new ArrayList<>();
         return transactionRepository.saveAll(transactionEntities);
     }

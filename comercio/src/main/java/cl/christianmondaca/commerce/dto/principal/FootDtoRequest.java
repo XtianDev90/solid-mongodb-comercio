@@ -1,5 +1,6 @@
 package cl.christianmondaca.commerce.dto.principal;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 
 import java.io.Serializable;
@@ -10,5 +11,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Builder
 public class FootDtoRequest implements Serializable {
+    @Schema(name = "barcode", required = true)
     private String barcode;
 }
